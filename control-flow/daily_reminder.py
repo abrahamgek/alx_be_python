@@ -15,7 +15,7 @@ match priority:
     case _:
         reminder = f"Task: {task} (priority not specified correctly)"
 # Modify the reminder if the task is time-bound
-if time_bound.lower() == "yes":
+if time_bound == "yes":
     reminder += " that requires immediate attention today!"
 # Provide a customized reminder
 print(reminder)

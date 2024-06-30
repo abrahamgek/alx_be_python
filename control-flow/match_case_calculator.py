@@ -1,8 +1,11 @@
+# Prompt for user input
 num1 = input("Enter the first number: ")
 num2 = input("Enter the second number: ")
 num1 = float(num1)
 num2 = float(num2)
-input = input("Choose the opertation (+, -, *, /): ")
+operation = input("Choose the operation (+, -, *, /): ")
+
+# Perform the calculation using match case
 match operation:
     case "+":
         result = num1 + num2
